@@ -36,6 +36,10 @@ body {
   --color-goldenrod: #fec45a;
   --neutral-07: #717171;
 
+  /* Filters */
+  --filter-gray-100: invert(48%) sepia(0%) saturate(1492%) hue-rotate(183deg) brightness(97%) contrast(70%);
+  --filter-secondary-green: brightness(0) saturate(100%) invert(27%) sepia(7%) saturate(3394%) hue-rotate(143deg) brightness(94%) contrast(91%);
+
   /* Gaps */
   --gap-4xl-7: 23.7px;
   --gap-3xs: 10px;

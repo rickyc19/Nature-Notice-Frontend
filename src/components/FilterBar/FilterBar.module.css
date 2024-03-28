@@ -4,9 +4,8 @@
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
-  filter: invert(48%) sepia(0%) saturate(1492%) hue-rotate(183deg) brightness(97%) contrast(70%);
+  filter: var(--filter-gray-100)
 }
-
 .vibetext {
   position: relative;
   letter-spacing: -0.01em;
@@ -14,7 +13,6 @@
   display: inline-block;
   min-width: 61px;
 }
-
 .vibeitem {
   align-self: stretch;
   background-color: var(--white);
@@ -25,6 +23,13 @@
   justify-content: center;
   padding: var(--padding-8xs) 0;
   gap: var(--gap-5xs);
+}
+.vibeitem:hover{
+  cursor: pointer;
+  color: var(--secondary-green);
+}
+.vibeitem:hover .vibeicon{
+  filter: var(--filter-secondary-green)
 }
 .vibefilters {
   align-self: stretch;
