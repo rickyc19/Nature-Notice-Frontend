@@ -1,0 +1,46 @@
+.mapPin11 {
+  height: 15px;
+  width: 15px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.austin {
+  position: relative;
+  font-size: var(--font-size-smi);
+  letter-spacing: -0.01em;
+  line-height: 26px;
+  font-family: var(--font-inter);
+  color: var(--secondary-green);
+  text-align: left;
+  display: inline-block;
+  min-width: 38px;
+}
+.addEventButton {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-8xs);
+}
+.down1Icon {
+  height: 13px;
+  width: 13px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.locationdropdown {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-8xs) var(--padding-base);
+  background-color: var(--color-goldenrod);
+  align-self: stretch;
+  border-radius: var(--br-33xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}

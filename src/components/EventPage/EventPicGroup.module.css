@@ -1,0 +1,45 @@
+.branchingAgeIcon,
+.branchingAgeIcon1,
+.mainimageIcon {
+  position: relative;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  object-fit: cover;
+}
+.mainimageIcon {
+  height: 429px;
+  width: 678px;
+  min-height: 429px;
+}
+.branchingAgeIcon,
+.branchingAgeIcon1 {
+  align-self: stretch;
+  height: 209.5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.eventpicgroup,
+.smallimagegroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  max-width: 100%;
+}
+.smallimagegroup {
+  width: 352px;
+  flex-direction: column;
+  min-width: 229px;
+}
+.eventpicgroup {
+  align-self: stretch;
+  flex-direction: row;
+}
+@media screen and (max-width: 975px) {
+  .mainimageIcon {
+    flex: 1;
+  }
+  .eventpicgroup {
+    flex-wrap: wrap;
+  }
+}

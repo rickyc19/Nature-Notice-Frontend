@@ -1,0 +1,55 @@
+.plus11 {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.savedEventMarker {
+  height: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+  box-sizing: border-box;
+}
+.create {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 26px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 48px;
+}
+.createeventbutton,
+.filterBarComponent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.createeventbutton {
+  border-radius: var(--br-71xl);
+  flex-direction: row;
+  gap: var(--gap-3xs);
+}
+.filterBarComponent {
+  flex-direction: column;
+  padding: var(--padding-3xs) 0 0;
+}
+.myeventsbutton {
+  height: 46px;
+  flex: 1;
+}
+.menuitems {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--dark);
+  font-family: var(--font-inter);
+}

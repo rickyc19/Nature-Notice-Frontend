@@ -1,0 +1,71 @@
+.button {
+  height: 36px;
+  width: 81px;
+}
+.button1 {
+  height: 36px;
+  flex: 1;
+  min-width: 63px;
+}
+.div {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 26px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 8px;
+}
+.androidCloseIcon {
+  height: 10px;
+  width: 10px;
+  position: relative;
+}
+.button2,
+.parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.parent {
+  align-self: stretch;
+  gap: var(--gap-mini);
+}
+.button2 {
+  height: 36px;
+  width: 65px;
+  border-radius: var(--br-33xl);
+  border: 1px solid var(--color-gainsboro-300);
+  box-sizing: border-box;
+  padding: var(--padding-8xs) var(--padding-mini);
+}
+.button3 {
+  height: 36px;
+  width: 85px;
+}
+.curselectionsgroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-146xl) 0 0;
+  gap: var(--gap-8xs);
+  text-align: left;
+  font-size: var(--font-size-smi);
+  color: var(--secondary-green);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 625px) {
+  .curselectionsgroup {
+    flex-wrap: wrap;
+    padding-right: var(--padding-63xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .curselectionsgroup {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,30 @@
+.audienceDescription {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 20px;
+  font-weight: 600;
+}
+.outdoorEnthusiastsNature {
+  font-weight: 600;
+  color: var(--dark);
+}
+.audiencedescription {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 140%;
+  color: var(--color-gray-100);
+}
+.audiencedescgroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--dark);
+  font-family: var(--font-inter);
+}

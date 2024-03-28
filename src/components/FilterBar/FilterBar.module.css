@@ -1,0 +1,69 @@
+.vibeicon {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  filter: invert(48%) sepia(0%) saturate(1492%) hue-rotate(183deg) brightness(97%) contrast(70%);
+}
+
+.vibetext {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 26px;
+  display: inline-block;
+  min-width: 61px;
+}
+
+.vibeitem {
+  align-self: stretch;
+  background-color: var(--white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-8xs) 0;
+  gap: var(--gap-5xs);
+}
+.vibefilters {
+  align-self: stretch;
+  width: 1058px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 var(--padding-45xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.filtersbutton {
+  height: 56px;
+  width: 112px;
+  cursor: pointer;
+}
+.filterbar {
+  align-self: stretch;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-6xl) var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-11xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-100);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1050px) {
+  .vibefilters {
+    display: none;
+    padding-right: var(--padding-13xl);
+    box-sizing: border-box;
+  }
+}

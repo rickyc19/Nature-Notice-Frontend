@@ -1,0 +1,50 @@
+.buttonany {
+  align-self: stretch;
+  width: 56px;
+}
+.buttonweekends,
+.buttonweeknights {
+  align-self: stretch;
+  flex: 1;
+}
+.datebuttons {
+  height: 36px;
+  width: 266px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.customDateRange {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 26px;
+  display: inline-block;
+  min-width: 121px;
+}
+.dateselector {
+  align-self: stretch;
+  border-radius: var(--br-41xl);
+  background-color: var(--white);
+  box-shadow: 0 19px 5px transparent, 0 12px 5px rgba(196, 196, 196, 0.01),
+    0 7px 4px rgba(196, 196, 196, 0.05), 0 3px 3px rgba(196, 196, 196, 0.09),
+    0 1px 2px rgba(196, 196, 196, 0.1);
+  border: 1px solid var(--color-lightgray-200);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-3xs) var(--padding-lgi) var(--padding-3xs)
+    var(--padding-4xs);
+  gap: var(--gap-sm);
+  text-align: left;
+  font-size: var(--font-size-smi);
+  color: var(--color-gray-100);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 625px) {
+  .dateselector {
+    flex-wrap: wrap;
+  }
+}

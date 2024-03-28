@@ -1,0 +1,107 @@
+.line6 {
+  position: relative;
+  text-transform: uppercase;
+}
+.line6Wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 140px;
+}
+.capa1Icon {
+  height: 10px;
+  width: 10px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.chips {
+  height: 40px;
+  width: 40px;
+  border-radius: var(--br-41xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mini);
+  box-sizing: border-box;
+}
+.div {
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 26px;
+  display: inline-block;
+  min-width: 9px;
+}
+.chips1 {
+  flex: 1;
+  border-radius: var(--br-41xl);
+  background-color: var(--white);
+  border: 1px solid var(--color-lightgray-200);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-6xs) var(--padding-sm);
+}
+.layer1Icon {
+  height: 10px;
+  width: 10px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.chips2 {
+  height: 40px;
+  width: 40px;
+  border-radius: var(--br-41xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mini);
+  box-sizing: border-box;
+}
+.chipsParent,
+.reservationspots,
+.reservationspots1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.chipsParent {
+  width: 130px;
+  align-items: flex-start;
+  gap: var(--gap-8xs);
+  font-size: var(--font-size-smi);
+}
+.reservationspots,
+.reservationspots1 {
+  max-width: 100%;
+}
+.reservationspots1 {
+  flex: 1;
+  border-radius: 0 0 var(--br-8xs) var(--br-8xs);
+  background-color: var(--white);
+  border: 1px solid var(--color-lightgray-100);
+  box-sizing: border-box;
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-mini) var(--padding-lgi);
+  gap: var(--gap-3xs);
+}
+.reservationspots {
+  align-self: stretch;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-3xs);
+  color: var(--dark);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .reservationspots1 {
+    flex-wrap: wrap;
+  }
+}

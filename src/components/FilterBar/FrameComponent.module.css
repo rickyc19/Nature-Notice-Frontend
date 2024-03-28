@@ -1,0 +1,25 @@
+.border,
+.borderParent,
+.fill {
+  align-self: stretch;
+  max-width: 100%;
+}
+.fill {
+  flex: 1;
+  position: relative;
+  background-color: var(--color-gray-200);
+}
+.border,
+.borderParent {
+  height: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.borderParent {
+  height: 127.3px;
+  flex-direction: column;
+  padding: 0 0 6.300000000000011px;
+  box-sizing: border-box;
+}

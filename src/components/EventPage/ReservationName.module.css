@@ -1,0 +1,64 @@
+.line5,
+.line6 {
+  position: relative;
+  display: inline-block;
+  min-width: 30px;
+}
+.line5 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-weight: 300;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-mini);
+  background-color: transparent;
+  align-self: stretch;
+  height: 18px;
+  color: var(--secondary-green);
+  text-align: left;
+  min-width: 76px;
+  padding: 0;
+}
+.line6Parent,
+.reservationname,
+.reservationname1 {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.line6Parent {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 var(--padding-211xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-11xs);
+}
+.reservationname,
+.reservationname1 {
+  flex-direction: row;
+}
+.reservationname1 {
+  flex: 1;
+  border-radius: var(--br-8xs) var(--br-8xs) 0 0;
+  background-color: var(--white);
+  border: 1px solid var(--color-lightgray-100);
+  box-sizing: border-box;
+  overflow: hidden;
+  align-items: center;
+  padding: var(--padding-mini) var(--padding-lgi);
+}
+.reservationname {
+  align-self: stretch;
+  align-items: flex-start;
+  text-align: left;
+  font-size: var(--font-size-3xs);
+  color: var(--dark);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .line6Parent {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,123 @@
+.eventCardComponents {
+  align-self: stretch;
+  width: 284px;
+  position: absolute;
+  margin: 0 !important;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  max-height: 100%;
+  object-fit: cover;
+}
+.eventCardComponents1 {
+  width: 19.2px;
+  height: 17.1px;
+  position: relative;
+}
+.eventsaved {
+  height: 32px;
+  width: 32px;
+  border-radius: var(--br-57xl-8);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5.119999885559082px 3.8399999141693115px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.eventimage {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 15.300000000000011px var(--padding-base) var(--padding-mini);
+  position: relative;
+}
+.eventtitle {
+  align-self: stretch;
+  line-height: 130%;
+  font-weight: 600;
+}
+.am,
+.apr1723,
+.eventDetails,
+.eventtitle,
+.onionCreekDrive {
+  position: relative;
+  letter-spacing: -0.01em;
+}
+.am,
+.apr1723,
+.eventDetails {
+  display: inline-block;
+  min-width: 60px;
+}
+.am,
+.eventDetails {
+  min-width: 5px;
+}
+.am {
+  min-width: 34px;
+}
+.apr1723Parent,
+.eventlocdate {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.apr1723Parent {
+  flex-direction: row;
+  padding: 0 var(--padding-157xl) 0 0;
+}
+.eventlocdate {
+  flex-direction: column;
+  font-size: var(--font-size-smi);
+  color: var(--color-gray-100);
+}
+.span {
+  font-weight: 600;
+}
+.eventprice {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -0.01em;
+  line-height: 20px;
+}
+.eventcard,
+.eventdescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.eventdescription {
+  align-self: stretch;
+  gap: var(--gap-3xs);
+}
+.eventcard {
+  height: 384px;
+  width: 285px;
+  overflow: hidden;
+  gap: var(--gap-mini);
+  min-width: 114px;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--dark);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .apr1723Parent {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
