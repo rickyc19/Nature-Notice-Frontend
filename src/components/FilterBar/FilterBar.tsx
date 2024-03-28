@@ -13,99 +13,29 @@ import Filters from "../FiltersModal/Filters";
 import PortalPopup from "../FiltersModal/PortalPopup";
 import styles from "./FilterBar.module.css";
 
-function VibeOutdoorFun () {
+
+
+function VibeItem (props: any) {
   return (
     <div className={styles.vibeitem}>
-      <img src={IconOutdoorFun} alt='vibeicon' className={styles.vibeicon} />
-      <div className='styles.vibename'>Outdoor Fun</div>
+      <img src={props.vibeimage} alt='vibeicon' className={styles.vibeicon} />
+      <div className='styles.vibename'>{props.vibename}</div>
     </div>
-  )
-}
-
-function VibeWildlife () {
-  return (
-    <form className={styles.vibeitem}>
-      <img src={IconWildlife} alt='vibeicon' className={styles.vibeicon} />
-      <div className='styles.vibename'>Wildlife</div>
-    </form>
-  )
-}
-
-function VibeGardening () {
-  return (
-    <form className={styles.vibeitem}>
-      <img src={IconGardening} alt='vibeicon' className={styles.vibeicon} />
-      <div className='styles.vibename'>Gardening</div>
-    </form>
-  )
-}
-
-function VibeWater () {
-  return (
-    <form className={styles.vibeitem}>
-      <img src={IconWater} alt='vibeicon' className={styles.vibeicon} />
-      <div className='styles.vibename'>Water</div>
-    </form>
-  )
-}
-
-function VibeWellness () {
-  return (
-    <form className={styles.vibeitem}>
-      <img src={IconWellness} alt='vibeicon' className={styles.vibeicon} />
-      <div className='styles.vibename'>Wellness</div>
-    </form>
-  )
-}
-
-function VibeScience () {
-  return (
-    <form className={styles.vibeitem}>
-      <img src={IconScience} alt='vibeicon' className={styles.vibeicon} />
-      <div className='styles.vibename'>Science</div>
-    </form>
-  )
-}
-
-function VibeArtsCrafts () {
-  return (
-    <form className={styles.vibeitem}>
-      <img src={IconArtsCrafts} alt='vibeicon' className={styles.vibeicon} />
-      <div className='styles.vibename'>Arts & Crafts</div>
-    </form>
-  )
-}
-
-function VibeJustice () {
-  return (
-    <form className={styles.vibeitem}>
-      <img src={IconJustice} alt='vibeicon' className={styles.vibeicon} />
-      <div className='styles.vibename'>Justice</div>
-    </form>
-  )
-}
-
-function VibeDarkSkies () {
-  return (
-    <form className={styles.vibeitem}>
-      <img src={IconDarkSkies} alt='vibeicon' className={styles.vibeicon} />
-      <div className='styles.vibename'>Dark Skies</div>
-    </form>
   )
 }
 
 function VibeFilters () {
   return (
     <form className={styles.vibefilters}>
-      <VibeOutdoorFun />
-      <VibeWildlife />
-      <VibeGardening />
-      <VibeWater />
-      <VibeWellness />
-      <VibeScience />
-      <VibeArtsCrafts />
-      <VibeJustice />
-      <VibeDarkSkies />
+      <VibeItem vibeimage={IconDarkSkies} vibename={"Outdoor Fun"}/>
+      <VibeItem vibeimage={IconWildlife} vibename={"Wildlife"}/>
+      <VibeItem vibeimage={IconGardening} vibename={"Gardening"}/>
+      <VibeItem vibeimage={IconWater} vibename={"Water"}/>
+      <VibeItem vibeimage={IconWellness} vibename={"Wellness"}/>
+      <VibeItem vibeimage={IconScience} vibename={"Science"}/>
+      <VibeItem vibeimage={IconArtsCrafts} vibename={"Arts & Crafts"}/>
+      <VibeItem vibeimage={IconJustice} vibename={"Justice"}/>
+      <VibeItem vibeimage={IconDarkSkies} vibename={"Dark Skies"}/>
     </form>
   )
 }
