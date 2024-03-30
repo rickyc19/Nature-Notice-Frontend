@@ -2,7 +2,11 @@ import { FunctionComponent } from "react";
 import { Button } from "@mui/material";
 import styles from "./ShowMoreGroup.module.css";
 
-const ShowMoreGroup: FunctionComponent = () => {
+export type ShowMoreType = {
+  onClick?: () => void;
+};
+
+const ShowMoreGroup: FunctionComponent<ShowMoreType> = ({onClick}) => {
   return (
     <div className={styles.showmoregroup}>
       <h3 className={styles.continueExploringNearest}>
@@ -13,6 +17,7 @@ const ShowMoreGroup: FunctionComponent = () => {
           className={styles.showmorebutton}
           disableElevation={true}
           variant="contained"
+          onClick={onClick}
           sx={{
             textTransform: "none",
             color: "#fff",
