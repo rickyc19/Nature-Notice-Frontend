@@ -1,4 +1,4 @@
-import { FunctionComponent, useCallback } from "react";
+import {FunctionComponent, useCallback, useState} from "react";
 import { useNavigate } from "react-router-dom";
 import SearchBar from "../components/NavBar/SearchBar";
 import MenuItems from "../components/NavBar/MenuItems";
@@ -18,6 +18,11 @@ const Homepage: FunctionComponent = () => {
   const onFrameContainerClick = useCallback(() => {
     navigate("/");
   }, [navigate]);
+
+  const [noEventCards, setNoEventCards] = useState(8);
+  const onShowMoreClick = () => {
+    setNoEventCards(noEventCards + 4);
+  };
 
   return (
     <div className={styles.homepage}>
@@ -53,9 +58,9 @@ const Homepage: FunctionComponent = () => {
       <main className={styles.homepageInner}>
         <section className={styles.filtersButtonContainerParent}>
           <div className={styles.filtersButtonContainer}>
-            {Array(6).fill(<EventCard onEventCardContainerClick={onEventCardContainerClick} />)}
+            {Array(noEventCards).fill(<EventCard onEventCardContainerClick={onEventCardContainerClick} />)}
           </div>
-          <ShowMoreGroup />
+          <ShowMoreGroup onClick={onShowMoreClick}/>
         </section>
       </main>
       <Footer />

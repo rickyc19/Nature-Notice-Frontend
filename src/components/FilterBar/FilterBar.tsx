@@ -27,7 +27,7 @@ function VibeItem (props: any) {
 function VibeFilters () {
   return (
     <form className={styles.vibefilters}>
-      <VibeItem vibeimage={IconDarkSkies} vibename={"Outdoor Fun"}/>
+      <VibeItem vibeimage={IconOutdoorFun} vibename={"Outdoor Fun"}/>
       <VibeItem vibeimage={IconWildlife} vibename={"Wildlife"}/>
       <VibeItem vibeimage={IconGardening} vibename={"Gardening"}/>
       <VibeItem vibeimage={IconWater} vibename={"Water"}/>
