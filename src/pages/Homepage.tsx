@@ -7,9 +7,29 @@ import EventCard from "../components/EventCard";
 import ShowMoreGroup from "../components/ShowMoreGroup";
 import Footer from "../components/Footer";
 import styles from "./Homepage.module.css";
+import { useQuery, gql } from "@apollo/client";
+
+const GET_CALENDAR_EVENTS = gql`
+  query Query {
+    listCalendarEvents {
+      calendarEvents {
+        id
+        host_event_id
+        host_id
+        event_name
+        event_description
+        event_price
+        event_start_date
+        event_end_date
+        event_location
+      }
+    }
+  }
+`;
 
 const Homepage: FunctionComponent = () => {
   const navigate = useNavigate();
+  const { loading, error, data } = useQuery(GET_CALENDAR_EVENTS);
 
   const onEventCardContainerClick = useCallback(() => {
     navigate("/event-page");
@@ -58,7 +78,19 @@ const Homepage: FunctionComponent = () => {
       <main className={styles.homepageInner}>
         <section className={styles.filtersButtonContainerParent}>
           <div className={styles.filtersButtonContainer}>
-            {Array(noEventCards).fill(<EventCard onEventCardContainerClick={onEventCardContainerClick} />)}
+            {data?.listCalendarEvents.calendarEvents.map((calendarEvent: any) => (
+              <EventCard
+                onEventCardContainerClick={onEventCardContainerClick}
+                eventTitle={calendarEvent.event_name}
+                eventLocation={calendarEvent.event_location}
+                eventStartDate={calendarEvent.event_start_date}
+                eventEndDate={calendarEvent.event_end_date}
+                eventTime={calendarEvent.event_start_date}
+                eventPrice={calendarEvent.event_price}
+                eventDescription={calendarEvent.event_description}
+                eventHost={calendarEvent.host_id}
+              />
+            ))}
           </div>
           <ShowMoreGroup onClick={onShowMoreClick}/>
         </section>

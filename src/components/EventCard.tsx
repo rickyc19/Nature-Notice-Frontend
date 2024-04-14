@@ -4,10 +4,28 @@ import styles from "./EventCard.module.css";
 export type EventCardType = {
   /** Action props */
   onEventCardContainerClick?: () => void;
+  eventTitle?: string;
+  eventLocation?: string;
+  eventStartDate?: string;
+  eventEndDate?: string;
+  eventTime?: string;
+  eventPrice: number;
+  eventSaved?: boolean;
+  eventDescription?: string;
+  eventHost?: string;
 };
 
 const EventCard: FunctionComponent<EventCardType> = ({
   onEventCardContainerClick,
+  eventTitle,
+  eventLocation,
+  eventStartDate,
+  eventEndDate,
+  eventTime,
+  eventPrice,
+  eventSaved,
+  eventDescription,
+  eventHost,
 }) => {
   return (
     <div className={styles.eventcard} onClick={onEventCardContainerClick}>
@@ -27,19 +45,18 @@ const EventCard: FunctionComponent<EventCardType> = ({
       </div>
       <div className={styles.eventdescription}>
         <div className={styles.eventtitle}>
-          Wilderness Wonders: Exploring the Hidden Beauty
+          {eventTitle}
         </div>
         <div className={styles.eventlocdate}>
-          <div className={styles.onionCreekDrive}>6814 Onion Creek Drive</div>
+          <div className={styles.onionCreekDrive}>{eventLocation}</div>
           <div className={styles.apr1723Parent}>
-            <div className={styles.apr1723}>Apr 17-23</div>
+            <div className={styles.apr1723}>{eventStartDate}</div>
             <div className={styles.eventDetails}>|</div>
             <div className={styles.am}>10AM</div>
           </div>
         </div>
         <div className={styles.eventprice}>
-          <span className={styles.span}>{`$15 `}</span>
-          <span>entry</span>
+          <span className={styles.span}>{(eventPrice > 0) ? "$" + eventPrice : "Free"} entry</span>
         </div>
       </div>
     </div>

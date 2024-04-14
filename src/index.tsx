@@ -9,8 +9,14 @@ import {
   createTheme,
   StyledEngineProvider,
 } from "@mui/material";
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 import "./global.css";
+
+const client = new ApolloClient({
+  uri: "http://localhost:5000/graphql",
+  cache: new InMemoryCache()
+});
 
 const muiTheme = createTheme();
 
@@ -22,7 +28,9 @@ root.render(
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={muiTheme}>
         <CssBaseline />
-        <App />
+        <ApolloProvider client={client}>
+          <App />
+        </ApolloProvider>
       </ThemeProvider>
     </StyledEngineProvider>
   </BrowserRouter>
